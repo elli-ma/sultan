@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-$black: #111111;
-$grey: #c4c4c4;
-$dark_blue: #3f4e65;
-$blue_1: linear-gradient(180deg, #6cd0e9 14.1%, #6cade9 57.69%);
-$blue_2: linear-gradient(90deg, #39acfd 0%, #5eb9ff 97.25%);
-$yellow_1: #ffc85e;
-$yellow_2: #f3a50d;
-$white: white;
+@import "src/color.scss";
 
 .App {
     font-family: Inter;

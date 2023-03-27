@@ -1,11 +1,12 @@
 import Button from "../button/Button";
+import Input from "../input/Input"
 import styles from "./Footer.module.scss"
 
 
 function Footer() {
     return (
         <footer className={styles.footer}>
-            <div className={styles.width}>
+            <div className={styles.wrap}>
                 <div className={styles.block}>
                     <img src="src/assets/logo.svg" alt=""></img>
                     <ul className={styles.link}>
@@ -13,7 +14,9 @@ function Footer() {
                             "под ключ" в Кокчетаве и Акмолинской области</li>
                         <li>
                             <p>Подпишись на скидки и акции</p>
-                            <input type="Введите ваш E-mail" />
+
+                            <Input name="Введите ваш E-mail" icon =""/>
+                            
                         </li>
                     </ul>
                 </div>
