@@ -1,0 +1,67 @@
+{
+    "categories": [
+        {
+            "id": "123445",
+            "name": "Косметика и гигиена",
+            "parameters": [
+                {"name":"Уход за телом"},
+                {"name":"Уход за руками"},
+                {"name":"Уход за ногами"},
+                {"name":"Уход за лицом"},
+                {"name":"Уход за волосами"},
+                {"name":"Средства для загара"},
+                {"name":"Средства для бритья"},
+                {"name":"Подарочные наборы"},
+                {"name":"Гигиеническая продукция"},
+                {"name":"Гигиена полости рта"},
+                {"name":"Бумажная продукция"}
+            ]
+        }
+    ],
+    "catalog": [
+        {
+            "url": "src/assets/image1.png",
+            "name": "AOS",
+            "size_type": "объем",
+            "size": "450",
+            "id": 4604049097548,
+            "manufacturer": "Нэфис",
+            "brand": "AOS",
+            "description": "Ср-во для мытья посуды Апельсин+мята",
+            "price": "48.76 ₸"
+        },
+        {
+            "url": "src/assets/image2.png",
+            "name": "AOS",
+            "size_type": "объем",
+            "size": "450 ",
+            "id": 4604049097548,
+            "manufacturer": "Нэфис",
+            "brand": "AOS",
+            "description": "средство для мытья посуды Crystal",
+            "price": "48.76 ₸"
+        },
+        {
+            "url": "src/assets/image3.png",
+            "name": "ARIEL",
+            "size_type": "вес",
+            "size": "15X28.8",
+            "id": 4604049097548,
+            "manufacturer": "Нэфис",
+            "brand": "AOS",
+            "description": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
+            "price": "48.76 ₸"
+        },
+        {
+            "url": "src/assets/image4.png",
+            "name": "BIMAX",
+            "size_type": "вес",
+            "size": "1500",
+            "id": 4604049097548,
+            "manufacturer": "Нэфис",
+            "brand": "AOS",
+            "description": "Порошок стиральный Автомат 100 пятен COMPACT",
+            "price": "48.76 ₸"
+        }
+    ]
+}
