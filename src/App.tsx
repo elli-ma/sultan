@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Header />
       <Card product={data.catalog[0]}/>
-      <Products data={data} />
+      <Products catalog={data.catalog} />
       <Footer />
     </div>
   )

@@ -1,20 +1,6 @@
 import Button from "../button/Button";
 import styles from "./Card.module.scss"
-
-type Product = {
-    url: string,
-    name: string,
-    type: string,
-    weight: string,
-    volume: string,
-    amount: string,
-    id: number,
-    manufacturer: string,
-    brand: string,
-    description: string,
-    price: string,
-    article: string
-}
+import {Product} from "../../types"
 
 function Card({ product }: { product: Product }) {
     return (
