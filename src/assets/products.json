@@ -4,64 +4,102 @@
             "id": "123445",
             "name": "Косметика и гигиена",
             "parameters": [
-                {"name":"Уход за телом"},
-                {"name":"Уход за руками"},
-                {"name":"Уход за ногами"},
-                {"name":"Уход за лицом"},
-                {"name":"Уход за волосами"},
-                {"name":"Средства для загара"},
-                {"name":"Средства для бритья"},
-                {"name":"Подарочные наборы"},
-                {"name":"Гигиеническая продукция"},
-                {"name":"Гигиена полости рта"},
-                {"name":"Бумажная продукция"}
+                {
+                    "name": "Уход за телом"
+                },
+                {
+                    "name": "Уход за руками"
+                },
+                {
+                    "name": "Уход за ногами"
+                },
+                {
+                    "name": "Уход за лицом"
+                },
+                {
+                    "name": "Уход за волосами"
+                },
+                {
+                    "name": "Средства для загара"
+                },
+                {
+                    "name": "Средства для бритья"
+                },
+                {
+                    "name": "Подарочные наборы"
+                },
+                {
+                    "name": "Гигиеническая продукция"
+                },
+                {
+                    "name": "Гигиена полости рта"
+                },
+                {
+                    "name": "Бумажная продукция"
+                }
             ]
         }
     ],
     "catalog": [
         {
             "url": "src/assets/image1.png",
-            "name": "AOS",
-            "size_type": "объем",
+            "name": "Ср-во для мытья посуды Апельсин+мята",
+            "type": "AOS",
             "size": "450",
-            "id": 4604049097548,
+            "id": 4604049097540,
             "manufacturer": "Нэфис",
             "brand": "AOS",
-            "description": "Ср-во для мытья посуды Апельсин+мята",
-            "price": "48.76 ₸"
+            "description": "",
+            "price": "48.76 ₸",
+            "weight": "90",
+            "volume": "",
+            "amount": "",
+            "article": ""
         },
         {
             "url": "src/assets/image2.png",
-            "name": "AOS",
-            "size_type": "объем",
+            "name": "средство для мытья посуды Crystal",
+            "type": "AOS",
             "size": "450 ",
-            "id": 4604049097548,
+            "id": 4604049097541,
             "manufacturer": "Нэфис",
             "brand": "AOS",
-            "description": "средство для мытья посуды Crystal",
-            "price": "48.76 ₸"
+            "description": "",
+            "price": "48.76 ₸",
+            "weight": "90",
+            "volume": "",
+            "amount": "",
+            "article": ""
         },
         {
             "url": "src/assets/image3.png",
-            "name": "ARIEL",
-            "size_type": "вес",
+            "name": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
+            "type": "AOS",
+            "description": "",
             "size": "15X28.8",
-            "id": 4604049097548,
+            "id": 4604049097542,
             "manufacturer": "Нэфис",
             "brand": "AOS",
-            "description": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
-            "price": "48.76 ₸"
+            "price": "48.76 ₸",
+            "weight": "90",
+            "volume": "",
+            "amount": "",
+            "article": ""
         },
         {
             "url": "src/assets/image4.png",
-            "name": "BIMAX",
-            "size_type": "вес",
+            "name": "Порошок стиральный Автомат 100 пятен COMPACT",
+            "type": "AOS",
+            "description": "",
             "size": "1500",
-            "id": 4604049097548,
+            "id": 4604049097543,
             "manufacturer": "Нэфис",
             "brand": "AOS",
-            "description": "Порошок стиральный Автомат 100 пятен COMPACT",
-            "price": "48.76 ₸"
+            "price": "48.76 ₸",
+            "weight": "90",
+            "volume": "",
+            "amount": "",
+            "article": ""
         }
     ]
 }

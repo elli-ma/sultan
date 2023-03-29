@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Card />
+      <Card product={data.catalog[0]}/>
       <Products data={data} />
       <Footer />
     </div>

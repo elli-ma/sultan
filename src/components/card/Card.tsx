@@ -1,12 +1,27 @@
 import Button from "../button/Button";
 import styles from "./Card.module.scss"
 
-function Card() {
+type Product = {
+    url: string,
+    name: string,
+    type: string,
+    weight: string,
+    volume: string,
+    amount: string,
+    id: number,
+    manufacturer: string,
+    brand: string,
+    description: string,
+    price: string,
+    article: string
+}
+
+function Card({ product }: { product: Product }) {
     return (
         <div className={styles.card}>
             <div className={styles.wrap}>
                 <div>
-                    <img className={styles.image} src="src/assets/image5.png" alt="" />
+                    <img className={styles.image} src={product.url} alt="" />
                 </div>
                 <div>
                     <span>В наличии</span>
@@ -25,35 +40,29 @@ function Card() {
                         <button className={styles.item}>"Прайс-лист"</button>
                     </div>
                     <ul>
-                        <li>Производитель: <b></b></li>
-                        <li>Бренд: <b></b></li>
-                        <li>Артикул: <b></b></li>
-                        <li>Штрихкод: <b></b></li>
+                        <li>Производитель: <b>{product.manufacturer}</b></li>
+                        <li>Бренд: <b>{product.brand}</b></li>
+                        <li>Артикул: <b>{product.article}</b></li>
+                        <li>Штрихкод: <b>{product.id}</b></li>
                     </ul>
                     <div>
                         <h4>Описание</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nullam interdum ut justo, vestibulum sagittis iaculis iaculis.
-                            Quis mattis vulputate feugiat massa vestibulum duis. Faucibus
-                            consectetur aliquet sed pellentesque consequat consectetur
-                            congue mauris venenatis. Nunc elit, dignissim sed nulla
-                            ullamcorper enim, malesuada.
+                            {product.description}
                         </p>
                     </div>
                     <h4>Характеристики</h4>
                     <ul>
-                        <li>Назначение: <b></b></li>
-                        <li>Тип: <b></b></li>
-                        <li>Производитель: <b></b></li>
-                        <li>Артикул:<b></b></li>
-                        <li>Штрихкод:<b></b></li>
-                        <li>Вес: <b></b></li>
-                        <li>Объем:<b></b></li>
-                        <li>Кол-во в коробке:<b></b></li>
+                        <li>Назначение: <b>{product.name}</b></li>
+                        <li>Тип: <b>{product.type}</b></li>
+                        <li>Производитель: <b>{product.manufacturer}</b></li>
+                        <li>Артикул:<b>{product.article}</b></li>
+                        <li>Штрихкод:<b>{product.id}</b></li>
+                        <li>Вес: <b>{product.weight}</b></li>
+                        <li>Объем:<b>{product.volume}</b></li>
+                        <li>Кол-во в коробке:<b>{product.amount}</b></li>
 
                     </ul>
-
                 </div>
             </div>
         </div>
