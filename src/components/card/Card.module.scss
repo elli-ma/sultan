@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    justify-content: center;
+}
+
+.wrap {
+    width: 1360px;
+    display: flex;
+    justify-content: space-between;
+}
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.item {
+    background: #ffffff;
+    box-shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    max-width: 245px;
+    height: 77px;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+}
+.image {
+    max-width: 700px;
+   
+}
