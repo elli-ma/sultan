@@ -2,9 +2,14 @@
 @import "src/color.scss";
 
 .App {
+    height: 100%;
+    font-weight: 400;
     font-family: Inter;
     font-size: 14px;
-    line-height: 150%
+    line-height: 150%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 h1 {
@@ -28,4 +33,20 @@ h4 {
     font-weight: 800;
     font-size: 16px;
     line-height: 130%;
+}
+h5 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130.02%;
+}
+hr {
+    background: $dark_blue;
+    opacity: 0.2;
+    border-width: 1.5px;
+    border-style: inset;
+    width: 100%;
+}
+.logo{
+    width: 156px;
+    height: 66px;
 }

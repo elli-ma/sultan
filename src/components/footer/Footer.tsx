@@ -44,7 +44,7 @@ function Footer() {
                     <h4 className={styles.title}>Скачать прайс-лист:</h4>
                     <ul className={styles.link}>
                         <li>
-                            <Button name="Прайс-лист" icon="fa-solid fa-cart-plus" />
+                            <Button name="Прайс-лист" icon="fa-solid fa-cart-plus" size = "button_big" />
                         </li>
                         <li>Связь в мессенджерах:</li>
                         <li>

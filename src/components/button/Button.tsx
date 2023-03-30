@@ -1,8 +1,9 @@
-import styles from "./Button.module.scss"
+import  "./Button.scss"
 
-function Button({ name, icon }: { name?: string, icon: string }) {
+function Button({ name, icon, size }: { name?: string, icon: string, size: string }) {
+
     return (
-        <button className={styles.button_main}> {name} <i className={icon}></i></button>
+        <button className={size}> {name} < i className={icon} ></i ></button >
     )
 }
 export default Button;

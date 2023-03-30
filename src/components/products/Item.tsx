@@ -24,7 +24,7 @@ function Item({ product }: { product: Product }) {
             </div>
             <div className={styles.footer}>
                 <h4>{product.price}</h4>
-                <Button name="В КОРЗИНУ" icon="fa-solid fa-cart-plus" />
+                <Button name="В КОРЗИНУ" icon="fa-solid fa-cart-plus" size = "button_small" />
             </div>
         </li>
     )

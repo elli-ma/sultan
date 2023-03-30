@@ -1,0 +1,39 @@
+@import "src/color.scss";
+
+.button_small {
+    background-color: $yellow_1;
+    height: 45px;
+    border-radius: 80px;
+    color: $white;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    font-family: "Inter";
+}
+
+.button_big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    font-size: 14px;
+    width: 200px;
+    background-color: $yellow_1;
+    height: 59px;
+    border-radius: 80px;
+    color: $white;
+    font-weight: 700;
+    i {
+        font-size: 17px;
+    }
+}
+
+.button_circle {
+    background-color: $yellow_1;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    color: $white;
+    font-size: 17px;
+    text-align: center;
+}
