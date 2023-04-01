@@ -8,6 +8,7 @@
     width: 1360px;
     display: flex;
     justify-content: space-between;
+    padding: 20px 0px;
 }
 .image {
     width: 50%;
@@ -22,7 +23,7 @@
 .info {
     width: 50%;
 
-    .type {       
+    .type {
         font-size: 30px;
         line-height: 150%;
     }
@@ -40,6 +41,14 @@
     justify-content: space-between;
     align-items: center;
     margin: 20px;
+}
+
+.block2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    height: 77px;   
 }
 
 .add {
@@ -66,4 +75,19 @@
     font-weight: 400;
     font-size: 12px;
     text-align: center;
+}
+
+.description {
+    display: none;
+}
+.characteristics {
+    display: none;
+}
+.description_title {
+    display: flex;
+    padding-top: 30px;
+}
+.characteristics_title {
+    display: flex;
+    padding-top: 30px;
 }
