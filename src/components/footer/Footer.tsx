@@ -1,77 +1,100 @@
 import Button from "../button/Button";
-import Input from "../input/Input"
 import styles from "./Footer.module.scss"
 
 
 function Footer() {
     return (
         <footer className={styles.footer}>
+
             <div className={styles.wrap}>
+
+
                 <div className={styles.block}>
-                    <img src="src/assets/logo.svg" alt=""></img>
-                    <ul className={styles.link}>
-                        <li>Компания «Султан» — снабжаем розничные магазины товарами
-                            "под ключ" в Кокчетаве и Акмолинской области</li>
-                        <li>
-                            <p>Подпишись на скидки и акции</p>
+                    <div className={styles.logo_prise}>
+                        <img className={styles.logo} src="src/assets/logo.svg" alt=""></img>
+                        <div className={styles.button}>
+                            <Button name="Прайс-лист" icon="fa-solid fa-arrow-down" size="button_small2" />
+                        </div>
+                    </div>
+                    <p>Компания «Султан» — снабжаем розничные магазины товарами
+                        "под ключ" в Кокчетаве и Акмолинской области
+                    </p>
+                    <span>Подпишись на скидки и акции</span>
 
-                            <Input name="Введите ваш E-mail" icon =""/>
-                            
-                        </li>
-                    </ul>
+                    <div className={styles.input_button}>
+                        <input type="text" placeholder="Введите ваш E-mail" />
+                        <Button icon="fa-solid fa-chevron-right" size="button_circle" />
+                    </div>
                 </div>
-                <div>
-                    <h4 className={styles.title}>Меню сайта:</h4>
-                    <ul className={styles.link}>
-                        <li>О компании</li>
-                        <li>Доставка и оплата</li>
-                        <li>Возврат</li>
-                        <li>Контакты</li>
 
-                    </ul>
-                </div>
-                <div>
-                    <h4 className={styles.title}>Категории:</h4>
-                    <ul className={styles.link}>
-                        <li>Бытовая химия</li>
-                        <li>Косметика и гигиена</li>
-                        <li>Товары для дома</li>
-                        <li>Товары для детей и мам</li>
-                        <li>Посуда</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 className={styles.title}>Скачать прайс-лист:</h4>
-                    <ul className={styles.link}>
-                        <li>
-                            <Button name="Прайс-лист" icon="fa-solid fa-cart-plus" size = "button_big" />
-                        </li>
-                        <li>Связь в мессенджерах:</li>
-                        <li>
-                            <i></i>
-                            <i></i>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 className={styles.title}>Контакты:</h4>
-                    <ul className={styles.link}>
-                        <li>+7 (777) 490-00-91<br />
-                            время работы: 9:00-20:00<br />
-                            <a href="">Заказать звонок</a>
-                        </li>
 
-                        <li>opt.sultan@mail.ru <br />
-                            На связи в любое время </li>
-                        <li>
-                            <i></i>
-                            <i></i>
-                        </li>
-                    </ul>
+                <div className={styles.menu_category}>
+                    <div>
+                        <h4 className={styles.title}>Меню сайта:</h4>
+                        <ul className={styles.link}>
+                            <li> <a href="">О компании</a></li>
+                            <li><a href="">Доставка и оплата</a></li>
+                            <li><a href="">Возврат</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 className={styles.title}>Категории:</h4>
+                        <ul className={styles.link}>
+                            <li><a href="">Бытовая химия</a></li>
+                            <li><a href="">Косметика и гигиена</a></li>
+                            <li><a href="">Товары для дома</a></li>
+                            <li><a href="">Товары для детей и мам</a></li>
+                            <li><a href="">Посуда</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className={styles.contacts}>
+
+                    <div className={styles.prise}>
+                        <h4 className={styles.title}>Скачать прайс-лист:</h4>
+                        <ul className={styles.link}>
+                            <li>
+                                <Button name="Прайс-лист" icon="fa-solid fa-arrow-down" size="button_big" />
+                            </li>
+                            <li>Связь в мессенджерах:</li>
+                            <li>
+                                <img src="src/assets/wa.png" alt="" />
+                                <img src="src/assets/telegram.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={styles.prise_small}>
+                        < ul>
+                            <li>Связь в мессенджерах:</li>
+                            <li>
+                                <img src="src/assets/wa.png" alt="" />
+                                <img src="src/assets/telegram.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 className={styles.title}>Контакты:</h4>
+                        <ul className={styles.link}>
+                            <li>
+                                <div><h5>+7 (777) 490-00-91</h5></div>
+                                <div>время работы: 9:00-20:00</div>
+                                <div className={styles.line}> <a href="">Заказать звонок</a> </div>
+                            </li>
+                            <li>opt.sultan@mail.ru <br />
+                                На связи в любое время </li>
+                            <li>
+                                <img src="src/assets/Visa.png" alt="" />
+                                <img src="src/assets/mc.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
-        </footer>
+        </footer >
 
     )
 }

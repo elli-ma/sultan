@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-       {/* <Card product={data.catalog[0]}/>
-      <Products catalog={data.catalog} />  */}
-      <Footer />
+       <Card product={data.catalog[0]}/>
+      {/* <Products catalog={data.catalog} /> 
+     <Footer />  */}
     </div>
   )
 

@@ -1,3 +1,4 @@
+@import "src/color.scss";
 .card {
     display: flex;
     justify-content: center;
@@ -8,11 +9,53 @@
     display: flex;
     justify-content: space-between;
 }
+.image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product_img {
+    display: block;
+}
+
+.info {
+    width: 50%;
+
+    .type {       
+        font-size: 30px;
+        line-height: 150%;
+    }
+    .size {
+        font-size: 12px;
+    }
+    .prise {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 130%;
+    }
+}
 .block {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px;
+}
+
+.add {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    button {
+        width: 34px;
+        height: 23px;
+        background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+        border-radius: 1000px;
+        font-size: 12px;
+        text-align: center;
+        color: $dark_blue;
+    }
 }
 .item {
     background: #ffffff;
@@ -23,8 +66,4 @@
     font-weight: 400;
     font-size: 12px;
     text-align: center;
-}
-.image {
-    max-width: 700px;
-   
 }

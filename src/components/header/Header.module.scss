@@ -11,8 +11,8 @@ header {
     nav {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
-
     span {
         color: $dark_blue;
         line-height: 18px;
@@ -28,16 +28,15 @@ header {
         font-size: 16px;
     }
 }
-
 .nav_header {
-    padding: 14px;
+    padding: 14px 0px;
 }
 
 .nav_footer {
-    padding: 21px;
+    padding: 20px 0px;
 }
 .input_button {
-    width: 263px;
+    max-width: 263px;
     height: 59px;
     display: flex;
     justify-content: space-between;
@@ -89,7 +88,6 @@ header {
 
 .link {
     text-align: right;
-    
 
     li {
         font-weight: 300;
@@ -101,6 +99,93 @@ header {
     a {
         text-decoration-line: underline;
         color: $dark_blue;
-
     }
 }
+.small_header {
+    display: none;
+}
+
+.small_footer {
+    display: none;
+}
+
+@media (max-width: 1360px) {
+    .wrap {
+        width: 90%;
+    }
+    .menu {
+        width: 400px;
+    }
+    .call {
+        display: none;
+    }
+    .prise {
+        display: none;
+    }
+    .input_button {
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrap {
+        width: 100%;
+        padding: 15px;
+    }
+    .nav_header {
+        padding: 0px;
+
+        .blocks {
+            display: none;
+        }
+        .menu {
+            display: none;
+        }
+    }
+
+    .nav_footer {
+        padding: 0px;
+        button {
+            display: none;
+        }
+        img {
+            display: none;
+        }
+        .input_button {
+            display: none;
+        }
+        .link {
+            display: none;
+        }
+        .prise {
+            display: none;
+        }
+        .shopping {
+            display: none;
+        }
+    }
+    .small_footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        span{
+            padding-left: 8px;
+        }
+    }
+    .small_header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+
+        img {
+            width: 97px;
+        }
+    }
+    .shopping i {
+        font-size: 21px;
+        color: $dark_blue;
+    }
+}
+
+

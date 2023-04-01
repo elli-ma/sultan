@@ -5,26 +5,166 @@ footer {
     display: flex;
     justify-content: center;
 }
-.wrap{
+.wrap {
     width: 1360px;
     color: $white;
     display: flex;
     justify-content: space-between;
-    height: 500px;
     padding-top: 71px;
+    padding-bottom: 116px;
 }
 .title {
     font-weight: 600;
     padding-bottom: 25px;
 }
+
+.block {
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    img {
+        width: 156px;
+    }
+    p {
+        max-width: 320px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        padding-bottom: 40px;
+    }
+}
+.logo_prise {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_button {
+    width: 263px;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ededed;
+    border-radius: 36px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: $dark_blue;
+    padding: 0 10px 0 20px;
+    input {
+        background: #ededed;
+    }
+}
+
 .link {
     li {
         padding-bottom: 20px;
-        max-width: 370;
+    }
+    img {
+        padding: 5px;
+    }
+
+    a {
+        color: $white;
+        &:hover {
+            color: $grey;
+        }
     }
 }
-.block {
-    max-width: 370px;
+.line {
+    text-decoration-line: underline;
 }
 
+.menu_category {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
 
+}
+.prise_small{
+    display: none;
+}
+.button{
+    display: none;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+@media (max-width: 1360px) {
+    .wrap {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1188px) {
+    .wrap {
+        padding: 71px 0px;
+        width: 90%;
+        li {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+        }
+    }
+
+    .block {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            padding: 0px;
+        }
+        img {
+            width: 120px;
+        }
+    }
+    .menu_category {
+        width: 290px;
+    }
+    .logo_prise {
+        width: 290px;
+    }
+    .input_button {
+        width: 290px;
+    }
+    .prise{
+        display: none;
+    }
+    .prise_small {
+        display: flex;
+    }
+    
+
+    .contacts{
+        flex-direction: column-reverse;
+    }
+    
+    .button {
+        display: inline;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrap {
+        width: 90%;
+        padding: 0;
+        flex-direction: column;
+        gap:30px
+    }
+    .block {
+        img {
+            width: 97px;
+        }
+    }
+    .contacts{
+        flex-direction: row-reverse;
+    }
+}

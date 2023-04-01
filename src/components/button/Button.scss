@@ -3,12 +3,27 @@
 .button_small {
     background-color: $yellow_1;
     height: 45px;
+    width: 153px;
     border-radius: 80px;
     color: $white;
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 0.15em;
     font-family: "Inter";
+}
+.button_small2 {
+    background-color: $yellow_1;
+    height: 40px;
+    width: 149px;
+    border-radius: 80px;
+    color: $white;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    font-family: "Inter";
+    i{
+        font-size: 13px;
+    }
 }
 
 .button_big {
@@ -37,3 +52,29 @@
     font-size: 17px;
     text-align: center;
 }
+
+.button_circle_small {
+    background-color: $yellow_1;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    color: $white;
+    text-align: center;
+}
+
+// @media (max-width: 1360px) {
+
+//     .button_big {
+//         width: 180px;
+//         background-color: $yellow_1;
+//         height: 45px;
+//         border-radius: 80px;
+//         color: $white;
+//         font-weight: 600;
+//         font-size: 12px;
+//         letter-spacing: 0.15em;
+//         font-family: "Inter";
+//     }
+
+// }
