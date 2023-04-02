@@ -15,11 +15,11 @@ function Header() {
                 <nav className={styles.nav_header}>
 
                     <div className={styles.small_header} >
-                        <Link to="/sultan/catalog"><Button icon="fa-solid fa-table-cells-large" size="button_circle_small" /></ Link>
+                        <Button icon="fa-solid fa-table-cells-large" size="button_circle_small" />
                         <img className={styles.logo_small} src="src/assets/logo2.svg" alt=""></img>
-                        <div className={styles.shopping}>
+                        <Link to="/sultan/cart" className={styles.shopping}>                       
                             <i className="fa-solid fa-cart-shopping"></i>
-                        </div>
+                        </Link>
                     </div>
 
                     <div className={styles.blocks}>
@@ -53,7 +53,7 @@ function Header() {
                 <nav className={styles.nav_footer}>
                     <div className={styles.small_footer}>
                         <div>
-                            <i className="fa-solid fa-table-cells-large"></i>
+                            <Link to="/sultan/catalog"><i className="fa-solid fa-table-cells-large"></i></Link>
                             <span>Каталог</span>
                         </div>
                         <div>
@@ -85,7 +85,7 @@ function Header() {
                         <i className="fa-solid fa-cart-shopping"></i>
                         <ul>
                             <li>Корзина</li>
-                            <li ><h5>{ totalCart } ₸</h5></li>
+                            <li ><h5>{totalCart} ₸</h5></li>
                         </ul>
                     </Link>
 
