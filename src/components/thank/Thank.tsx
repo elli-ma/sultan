@@ -1,15 +1,14 @@
 import Button from "../button/Button";
 import styles from "./Thank.module.scss"
 
-function Thank({close}:{close: () => any }) {
+function Thank({ close }: { close: () => any }) {
     return (
         <div className={styles.thank}>
             <div className={styles.i}>
-                <button onClick = {close}>
+                <button className={styles.i} onClick={close}>
+                    <i className="fa-solid fa-xmark"  ></i>
+                </button>
 
-              <i className="fa-solid fa-xmark {styles.i}"  ></i>  
-              </button>
-                
             </div>
 
             <div className={styles.block}>

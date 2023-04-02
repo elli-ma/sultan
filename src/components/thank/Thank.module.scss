@@ -9,18 +9,30 @@
     flex-direction: column;
     border-radius: 8px;
     box-shadow: 0px 14px 39px 600px rgba(0, 0, 0, 0.5);
-    justify-content: space-around;
-    text-align: right;
-
-    .i {
-        color: $yellow_2;
-        padding: 36px;
-        font-size: 17px;
-    }
+        text-align: right;
+    z-index: 1;
 }
 .block {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    button{
+        margin: 1%;
+    }
+    h2{
+       margin: 1%;
+    }
+    p{
+        margin: 1%;
+    }
+}
+.i {
+    background-color: white;
+    border-radius: 8px;
+    i {
+        color: $yellow_2;
+        padding: 36px;
+        font-size: 17px;
+    }
 }
