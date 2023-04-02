@@ -10,6 +10,9 @@
     font-size: 12px;
     letter-spacing: 0.15em;
     font-family: "Inter";
+    &:hover{
+background-color: $yellow_2;
+    }
 }
 .button_small2 {
     background-color: $yellow_1;
@@ -21,6 +24,9 @@
     font-size: 12px;
     letter-spacing: 0.15em;
     font-family: "Inter";
+    &:hover{
+        background-color: $yellow_2;
+            }
     i{
         font-size: 13px;
     }
@@ -38,6 +44,9 @@
     border-radius: 80px;
     color: $white;
     font-weight: 700;
+    &:hover{
+        background-color: $yellow_2;
+            }
     i {
         font-size: 17px;
     }
@@ -51,6 +60,9 @@
     color: $white;
     font-size: 17px;
     text-align: center;
+    &:hover{
+        background-color: $yellow_2;
+            }
 }
 
 .button_circle_small {
@@ -61,6 +73,9 @@
     font-size: 14px;
     color: $white;
     text-align: center;
+    &:hover{
+        background-color: $yellow_2;
+            }
 }
 .button_circle_big {
     background-color: $yellow_1;
@@ -70,6 +85,9 @@
     font-size: 14px;
     color: $white;
     text-align: center;
+    &:hover{
+        background-color: $yellow_2;
+            }
 }
 
 // @media (max-width: 1360px) {

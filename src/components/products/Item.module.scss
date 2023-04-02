@@ -2,7 +2,7 @@
 
 .item {
     padding: 29px 15px;
-    width: 290px;
+    width: 326px;
     height: 490px;
     display: flex;
     flex-direction: column;
@@ -16,8 +16,12 @@
     gap: 4px;
 }
 .image {
+    height: 218px;
     flex-shrink: 0;
     align-self: center;
+}
+.img_product {
+    height: 100%;
 }
 .size {
     font-weight: 400;
@@ -27,6 +31,7 @@
 }
 
 .name {
+    color:#111111;
     font-weight: 500;
     font-size: 16px;
     line-height: 130%;

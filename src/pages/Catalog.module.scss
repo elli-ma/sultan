@@ -1,10 +1,113 @@
-.Catalog {
+@import "src/color.scss";
+.catalog {
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+}
+.wrap {
+    width: 1360px;
     display: flex;
     flex-direction: column;
 }
-.header{
+.header_buttons {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    gap: 11px;
+    margin: 30px 0px;
 }
 .block {
     display: flex;
+    justify-content: space-between;
 }
+.title_sort {
+    display: flex;
+    justify-content: space-between;
+}
+.button_white {
+    height: 70px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $dark_blue;
+    background: #ffffff;
+    box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.04);
+    border-radius: 10px;
+    order: 0;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    &:hover {
+        background: $yellow_1;
+        color: $white;
+    }
+}
+.block_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.add_prise {
+    display: flex;
+    width: 238px;
+    justify-content: space-between;
+    align-items: center;
+    input {
+        text-align: center;
+        width: 100px;
+        height: 23px;
+        background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+        border-radius: 1000px;
+    }
+}
+
+.input_button {
+    max-width: 263px;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ededed;
+    border-radius: 36px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: $dark_blue;
+    padding: 0 10px 0 20px;
+    input {
+        background: #ededed;
+    }
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #3f4e65;
+    a {
+        &:hover {
+            color: #b8b9bb;
+        }
+    }
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    max-width: 270px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+

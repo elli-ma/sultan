@@ -1,0 +1,26 @@
+@import "src/color.scss";
+.thank {
+    gap: 20px;
+    width: 735px;
+    height: 424px;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0px 14px 39px 600px rgba(0, 0, 0, 0.5);
+    justify-content: space-around;
+    text-align: right;
+
+    .i {
+        color: $yellow_2;
+        padding: 36px;
+        font-size: 17px;
+    }
+}
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

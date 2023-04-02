@@ -1,13 +1,21 @@
+import { Link } from 'react-router-dom'
+
 import Button from "../button/Button";
 import styles from "./Header.module.scss"
+import { useAppSelector } from '../../hooks';
+
 function Header() {
+
+    const cart = useAppSelector(state => state.cart)
+    const totalCart = cart.value.reduce((r, p) => r + p.product.price * p.amount, 0).toFixed(2)
+
     return (
         <header className={styles.header}>
             <div className={styles.wrap}>
                 <nav className={styles.nav_header}>
 
                     <div className={styles.small_header} >
-                        <Button icon="fa-solid fa-table-cells-large" size="button_circle_small" />
+                        <Link to="/sultan/catalog"><Button icon="fa-solid fa-table-cells-large" size="button_circle_small" /></ Link>
                         <img className={styles.logo_small} src="src/assets/logo2.svg" alt=""></img>
                         <div className={styles.shopping}>
                             <i className="fa-solid fa-cart-shopping"></i>
@@ -55,7 +63,7 @@ function Header() {
                         </div>
                     </div>
                     <img className="logo" src="src/assets/logo2.svg" alt=""></img>
-                    <Button name="Каталог" icon="fa-solid fa-table-cells-large" size="button_big" />
+                    <Link to="/sultan/catalog"><Button name="Каталог" icon="fa-solid fa-table-cells-large" size="button_big" /></Link>
                     <div className={styles.input_button}>
                         <input type="text" placeholder="Поиск..." />
                         <Button icon="fa-solid fa-magnifying-glass" size="button_circle" />
@@ -73,13 +81,13 @@ function Header() {
                         <Button name="Прайс-лист" icon="fa-solid fa-arrow-down" size="button_big" />
                     </div>
 
-                    <div className={styles.shopping}>
+                    <Link to="/sultan/cart" className={styles.shopping}>
                         <i className="fa-solid fa-cart-shopping"></i>
                         <ul>
                             <li>Корзина</li>
-                            <li ><h5>12 478 ₸</h5></li>
+                            <li ><h5>{ totalCart } ₸</h5></li>
                         </ul>
-                    </div>
+                    </Link>
 
                 </nav>
             </div>

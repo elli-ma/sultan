@@ -19,10 +19,11 @@ h1 {
     color: $white;
 }
 h2 {
-    font-weight: 800;
+    font-weight: 500;
     font-size: 40px;
     line-height: 120%;
-    color: $yellow_1;
+    text-transform: uppercase;
+    color: #111111;
 }
 h3 {
     font-weight: 800;
@@ -46,6 +47,25 @@ hr {
     border-style: inset;
     width: 100%;
 }
-.logo{
-    width: 12%;  
+.logo {
+    width: 12%;
+}
+
+.crumbs {
+    display: flex;
+    padding: 40px 0px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+    color: $dark_blue;
+    gap: 20px;
+    .end_crumb {
+        opacity: 0.5;
+    }
+    a {
+        color: $dark_blue;
+        &:hover {
+            color: $grey;
+        }
+    }
 }
