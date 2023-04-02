@@ -1,6 +1,11 @@
 import Button from "../button/Button";
 import styles from "./Footer.module.scss"
 
+import logoUrl from '../../assets/logo.svg'
+import waUrl from '../../assets/wa.png'
+import telegramUrl from '../../assets/telegram.png'
+import visaUrl from '../../assets/Visa.png'
+import mcUrl from '../../assets/mc.png'
 
 function Footer() {
     return (
@@ -11,7 +16,7 @@ function Footer() {
 
                 <div className={styles.block}>
                     <div className={styles.logo_prise}>
-                        <img className={styles.logo} src="src/assets/logo.svg" alt=""></img>
+                        <img className={styles.logo} src={logoUrl} alt=""></img>
                         <div className={styles.button}>
                             <Button name="Прайс-лист" icon="fa-solid fa-arrow-down" size="button_small2" />
                         </div>
@@ -60,8 +65,8 @@ function Footer() {
                             </li>
                             <li>Связь в мессенджерах:</li>
                             <li>
-                                <img src="src/assets/wa.png" alt="" />
-                                <img src="src/assets/telegram.png" alt="" />
+                                <img src={waUrl} alt="" />
+                                <img src={telegramUrl} alt="" />
                             </li>
                         </ul>
                     </div>
@@ -69,8 +74,8 @@ function Footer() {
                         < ul>
                             <li>Связь в мессенджерах:</li>
                             <li>
-                                <img src="src/assets/wa.png" alt="" />
-                                <img src="src/assets/telegram.png" alt="" />
+                                <img src={waUrl} alt="" />
+                                <img src={telegramUrl} alt="" />
                             </li>
                         </ul>
                     </div>
@@ -86,8 +91,8 @@ function Footer() {
                             <li>opt.sultan@mail.ru <br />
                                 На связи в любое время </li>
                             <li>
-                                <img src="src/assets/Visa.png" alt="" />
-                                <img src="src/assets/mc.png" alt="" />
+                                <img src={visaUrl} alt="" />
+                                <img src={mcUrl} alt="" />
                             </li>
                         </ul>
                     </div>

@@ -1,3 +1,4 @@
+import styles from "./ProductsCart.module.scss"
 import { useLoaderData, useParams, Link } from 'react-router-dom'
 
 import Card from "../components/card/Card";
@@ -10,12 +11,15 @@ function ProductsCart({ products }: { products: Product[] }) {
 
     if (product) {
         return (
-            <div>
-                <ul className="crumbs">
-                    <Link to=""><a href="">Главная</a></Link >
-                    <Link to="/sultan/catalog"><a href="">Каталог</a></Link>
-                    <Link to={`/sultan/catalog/${product.id}`} className="end_crumb">{product.name}</Link>
-                </ul>
+            <div className={styles.ProductsCart}>
+                <div className={styles.wrap}>
+                    <ul className="crumbs">
+                        <Link to=""><a href="">Главная</a></Link >
+                        <Link to="/sultan/catalog"><a href="">Каталог</a></Link>
+                        <Link to={`/sultan/catalog/${product.id}`} className="end_crumb">{product.name}</Link>
+                    </ul>
+                </div>
+
                 <Card product={product} />
             </div>
 

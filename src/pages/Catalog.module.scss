@@ -5,10 +5,17 @@
     justify-content: center;
 }
 .wrap {
-    width: 1360px;
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 1360px) {
+        width: 1360px;
+    }
+    @media screen and (max-width: 1360px) {
+        padding: 0 2em;
+        width: 100%;
+    }
 }
+
 .header_buttons {
     width: 100%;
     display: flex;
@@ -19,10 +26,17 @@
 .block {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 .title_sort {
     display: flex;
     justify-content: space-between;
+
+    span {
+        @media screen and (max-width: 1360px) {
+            display: none;
+        }
+    }
 }
 .button_white {
     height: 70px;
@@ -109,5 +123,20 @@
     display: flex;
     gap: 30px;
     flex-direction: column;
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
 }
 
+@media (max-width: 1188px) {
+    .header_buttons {
+        display: none;
+    }
+    .title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;        
+        text-transform: uppercase;        
+        color: #111111;
+    }
+}

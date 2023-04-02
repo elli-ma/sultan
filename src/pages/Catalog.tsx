@@ -26,7 +26,7 @@ function Catalog({ catalog, category }: { catalog: Product[], category: { parame
                         <li className="end_crumb"> Косметика и гигиена</li>
                     </ul>
                     <div className={styles.title_sort}>
-                        <h2>Косметика и гигиена</h2>
+                        <h2 className={styles.title}>Косметика и гигиена</h2>
                         <div>
                             <span>Сортировка:</span>
                             <span>Название</span>

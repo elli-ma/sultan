@@ -81,19 +81,17 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 30%;
-
 }
-.prise_small{
+.prise_small {
     display: none;
 }
-.button{
+.button {
     display: none;
 }
 
-.contacts{
+.contacts {
     display: flex;
-    justify-content: space-between;
-    width: 30%;
+    gap: 100px;
 }
 @media (max-width: 1360px) {
     .wrap {
@@ -103,15 +101,16 @@ footer {
 
 @media (max-width: 1188px) {
     .wrap {
-        padding: 71px 0px;
-        width: 90%;
+        padding: 71px 0 0 71px;
         li {
             font-weight: 400;
             font-size: 12px;
             line-height: 150%;
         }
     }
-
+    .contacts {
+        gap:0px;
+    }
     .block {
         font-weight: 400;
         font-size: 12px;
@@ -135,18 +134,17 @@ footer {
     .input_button {
         width: 290px;
     }
-    .prise{
+    .prise {
         display: none;
     }
     .prise_small {
         display: flex;
     }
-    
 
-    .contacts{
+    .contacts {
         flex-direction: column-reverse;
     }
-    
+
     .button {
         display: inline;
     }
@@ -154,17 +152,18 @@ footer {
 
 @media (max-width: 1000px) {
     .wrap {
-        width: 90%;
         padding: 0;
+        padding-top: 2em;
         flex-direction: column;
-        gap:30px
+        gap: 30px;
     }
     .block {
         img {
             width: 97px;
         }
     }
-    .contacts{
+    .contacts {
         flex-direction: row-reverse;
+        align-self: baseline;
     }
 }
