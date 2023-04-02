@@ -13,8 +13,8 @@ function Thank({ close }: { close: () => any }) {
 
             <div className={styles.block}>
                 <Button icon="fa-solid fa-check" size="button_circle_big" />
-                <h2>Спасибо за заказ</h2>
-                <p>Наш менеджер свяжется с вами в ближайшее время</p>
+                <h2 className={styles.title}>Спасибо за заказ</h2>
+                <p className={styles.text}>Наш менеджер свяжется с вами в ближайшее время</p>
             </div>
         </div>
 

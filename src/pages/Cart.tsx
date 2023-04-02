@@ -13,16 +13,16 @@ function Cart() {
   const cart = useAppSelector(state => state.cart.value)
   const dispatch = useAppDispatch()
   const cartTotal = cart.reduce((r, p) => r + p.product.price * p.amount, 0).toFixed(2)
-  
+
   function onPurchase() {
     setShowThank(true)
     dispatch(clear())
   }
 
   return (
-   
+
     <div className={styles.cart}>
-      { !showThank || <Thank close={() => setShowThank(false)}/> }
+      {!showThank || <Thank close={() => setShowThank(false)} />}
       <div className={styles.wrap}>
         <ul className="crumbs">
           <li><a href="">Главная</a></li>
@@ -31,36 +31,41 @@ function Cart() {
         <h2 className={styles.title}>Корзина</h2>
         <hr />
         <div>
-          {cart.map(({product, amount}) => <><div className={styles.item} key={product.id}>
-            <div className ={styles.img_block}>
-              <div className={styles.img}>
+          {cart.map(({ product, amount }) => <>
+            <div className={styles.item} key={product.id}>
+
+              <div className={styles.img_block}>
                 <img src={product.url} alt={product.description} />
-               </div> 
-               <div className={styles.block}>
-                  <span>{product.weight}</span>
-                  <h3 className={styles.title_item}>{product.name}</h3>
-                  <p>{product.description}</p>
-                </div>              
-            </div>
-            <div className={styles.block2}>
-              <div className={styles.add}>
-                <button onClick={() => dispatch(removeProduct(product))} className={styles.minus}>-</button>
-                <span>{amount}</span>
-                <button onClick={() => dispatch(addProduct(product))} className={styles.plus}>+</button>
               </div>
-              <h3 className={styles.price} >{(product.price * amount).toFixed(2)}</h3>
-              <Button onClick={() => dispatch(removeProduct(product))} icon="fa-solid fa-trash-can" size="button_circle_big" />
+
+              <div className={styles.block}>
+                <span>{product.weight}</span>
+                <h3 className={styles.title_item}>{product.name}</h3>
+                <p>{product.description}</p>
+              </div>
+
+              <div className={styles.block2}>
+                <div className={styles.add}>
+                  <button onClick={() => dispatch(removeProduct(product))} className={styles.minus}>-</button>
+                  <span>{amount}</span>
+                  <button onClick={() => dispatch(addProduct(product))} className={styles.plus}>+</button>
+                </div>
+                <h3 className={styles.price} >{(product.price * amount).toFixed(2)}</h3>
+                <Button onClick={() => dispatch(removeProduct(product))} icon="fa-solid fa-trash-can" size="button_circle_big" />
+              </div>
             </div>
-          </div> <hr /></>)} 
-        </div>
 
-        <div className={styles.button_sum}>
-          <Button onClick={onPurchase} name="Оформить заказ" size="button_big" />
-          <h3>{cartTotal}  ₸</h3>
-        </div>
-
+          
+          <hr /></>)}
       </div>
+
+      <div className={styles.button_sum}>
+        <Button onClick={onPurchase} name="Оформить заказ" size="button_big" />
+        <h3>{cartTotal}  ₸</h3>
+      </div>
+
     </div>
+    </div >
   )
 }
 

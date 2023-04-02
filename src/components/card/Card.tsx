@@ -12,7 +12,7 @@ function Card({ product }: { product: Product }) {
     let [showChar, setChar] = useState(false)
 
     const productIndex = cart.findIndex(p => p.product.id == product.id)
-    const amount = productIndex == -1 ? 0: cart[productIndex].amount
+    const amount = productIndex == -1 ? 0 : cart[productIndex].amount
 
     return (
         <div className={styles.card}>
@@ -25,21 +25,16 @@ function Card({ product }: { product: Product }) {
                     <p className={styles.type}><b>{product.type}</b>&nbsp;{product.name}</p>
                     <span className={styles.size}>{product.weight}</span>
                     <div className={styles.block}>
-                        <h3>{product.price}</h3>
+                        <h3 className={styles.prise}>{product.price}</h3>
                         <div className={styles.add}>
                             <button onClick={() => dispatch(removeProduct(product))} className={styles.minus}>-</button>
                             <span>{amount}</span>
                             <button onClick={() => dispatch(addProduct(product))} className={styles.plus}>+</button>
                         </div>
                         <Button onClick={() => dispatch(addProduct(product))} name="В корзину" icon="fa-solid fa-cart-plus" size="button_big" />
-                    </div>
-
-                    <div className={styles.block2}>
-                        <div className={styles.item}>
-                            <i className="fa-solid fa-folder-tree"></i>
-                        </div>
-                        <div className={styles.item}>При покупке от 10 000 ₸ бесплатная доставка по Кокчетаву и области</div>
-                        <button className={styles.item}>"Прайс-лист"<i className="fa-solid fa-arrow-down"></i></button>
+                        <button className={styles.button_white}><i className="fa-solid fa-folder-tree"></i></button>
+                        <button className={styles.button_white}>При покупке от 10 000 ₸ бесплатная доставка по Кокчетаву и области</button>
+                        <button className={styles.button_white}>"Прайс-лист"<i className="fa-solid fa-arrow-down"></i></button>
                     </div>
                     <ul>
                         <li>Производитель: <b>{product.manufacturer}</b></li>
