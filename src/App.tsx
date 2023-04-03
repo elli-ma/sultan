@@ -5,7 +5,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Card from "./components/card/Card"
 
-import data from './assets/products.json'
+import mock from './mocks/products.mock.json'
 
 import Cart from './pages/Cart';
 import Catalog from './pages/Catalog';
@@ -19,9 +19,9 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route index path="/sultan/catalog" element={<Catalog catalog={data.catalog} category={data.categories[0]}/>} />
+        <Route index path="/sultan/catalog/:category?" element={<Catalog catalog={mock.catalog} category={mock.categories[0]}/>} />
         <Route path ="/sultan/cart" element={<Cart/>} />
-        <Route path="/sultan/catalog/:productId" element={<ProductsCard products={data.catalog}/>} />
+        <Route path="/sultan/catalog/:productId" element={<ProductsCard products={mock.catalog}/>} />
       </Routes>
       <Outlet />
       <Footer />

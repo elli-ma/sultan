@@ -6,13 +6,13 @@ function Thank({ close }: { close: () => any }) {
         <div className={styles.thank}>
             <div className={styles.i}>
                 <button className={styles.i} onClick={close}>
-                    <i className="fa-solid fa-xmark"  ></i>
+                    <i className="icon-close"  ></i>
                 </button>
 
             </div>
 
             <div className={styles.block}>
-                <Button icon="fa-solid fa-check" size="button_circle_big" />
+                <Button icon="icon-chek" size="button_circle_big" />
                 <h2 className={styles.title}>Спасибо за заказ</h2>
                 <p className={styles.text}>Наш менеджер свяжется с вами в ближайшее время</p>
             </div>

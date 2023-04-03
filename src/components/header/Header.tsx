@@ -17,23 +17,23 @@ function Header() {
                 <nav className={styles.nav_header}>
 
                     <div className={styles.small_header} >
-                        <Button icon="fa-solid fa-table-cells-large" size="button_circle_small" />
+                        <Button icon="icon-menu" size="button_circle_small" />
                         <img className={styles.logo_small} src={logoUrl} alt=""></img>
-                        <Link to="/sultan/cart" className={styles.shopping}>                       
-                            <i className="fa-solid fa-cart-shopping"></i>
+                        <Link to="/sultan/cart" className={styles.shopping}>
+                            <i className="icon-cart"></i>
                         </Link>
                     </div>
 
                     <div className={styles.blocks}>
                         <div className={styles.block}>
-                            <i className="fa-solid fa-location-dot"></i>
+                            <i className="icon-map"></i>
                             <div>
                                 <h5>г. Кокчетав, ул. Ж. Ташенова 129Б</h5>
                                 <span>(Рынок Восточный)</span>
                             </div>
                         </div>
                         <div className={styles.block}>
-                            <i className="fa-regular fa-envelope"></i>
+                            <i className="icon-mail"></i>
                             <div>
                                 <h5>opt.sultan@mail.ru  </h5>
                                 <span>На связи в любое время</span>
@@ -55,20 +55,20 @@ function Header() {
                 <nav className={styles.nav_footer}>
                     <div className={styles.small_footer}>
                         <div>
-                            <Link to="/sultan/catalog"><i className="fa-solid fa-table-cells-large"></i></Link>
+                            <Link to="/sultan/catalog"><i className="icon-catalog"></i></Link>
                             <span>Каталог</span>
                         </div>
                         <div>
-                            <i className="fa-solid fa-magnifying-glass"></i>
+                            <i className="icon-magnify"></i>
                             <span>Поиск</span>
 
                         </div>
                     </div>
                     <img className="logo" src={logoUrl} alt=""></img>
-                    <Link to="/sultan/catalog"><Button name="Каталог" icon="fa-solid fa-table-cells-large" size="button_big" /></Link>
+                    <Link to="/sultan/catalog"><Button name="Каталог" icon="icon-catalog" size="button_big" /></Link>
                     <div className={styles.input_button}>
                         <input type="text" placeholder="Поиск..." />
-                        <Button icon="fa-solid fa-magnifying-glass" size="button_circle" />
+                        <Button icon="icon-magnify" size="button_circle" />
                     </div>
 
                     <ul className={styles.link}>
@@ -80,11 +80,11 @@ function Header() {
                         <img className={styles.call} src={phoneUrl} alt=""></img>
                     </div>
                     <div className={styles.prise}>
-                        <Button name="Прайс-лист" icon="fa-solid fa-arrow-down" size="button_big" />
+                        <Button name="Прайс-лист" icon="icon-download" size="button_big" />
                     </div>
 
                     <Link to="/sultan/cart" className={styles.shopping}>
-                        <i className="fa-solid fa-cart-shopping"></i>
+                        <i className="icon-cart"></i>
                         <ul>
                             <li>Корзина</li>
                             <li ><h5>{totalCart} ₸</h5></li>

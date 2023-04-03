@@ -18,7 +18,7 @@ function Footer() {
                     <div className={styles.logo_prise}>
                         <img className={styles.logo} src={logoUrl} alt=""></img>
                         <div className={styles.button}>
-                            <Button name="Прайс-лист" icon="fa-solid fa-arrow-down" size="button_small2" />
+                            <Button name="Прайс-лист" icon="icon-download" size="button_small2" />
                         </div>
                     </div>
                     <p>Компания «Султан» — снабжаем розничные магазины товарами
@@ -28,7 +28,7 @@ function Footer() {
 
                     <div className={styles.input_button}>
                         <input type="text" placeholder="Введите ваш E-mail" />
-                        <Button icon="fa-solid fa-chevron-right" size="button_circle" />
+                        <Button icon="icon-arrow-right" size="button_circle" />
                     </div>
                 </div>
 
@@ -61,7 +61,7 @@ function Footer() {
                         <h4 className={styles.title}>Скачать прайс-лист:</h4>
                         <ul className={styles.link}>
                             <li>
-                                <Button name="Прайс-лист" icon="fa-solid fa-arrow-down" size="button_big" />
+                                <Button name="Прайс-лист" icon="icon-download" size="button_big" />
                             </li>
                             <li>Связь в мессенджерах:</li>
                             <li>

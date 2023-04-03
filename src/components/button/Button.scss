@@ -1,20 +1,35 @@
 @import "src/color.scss";
 
 .button_small {
+    gap: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.15em;
     background-color: $yellow_1;
     height: 45px;
     width: 153px;
     border-radius: 80px;
     color: $white;
     font-weight: 700;
-    font-size: 12px;
     letter-spacing: 0.15em;
     font-family: "Inter";
-    &:hover{
-background-color: $yellow_2;
+    text-transform: uppercase;
+    i{
+        font-size: 18px;
+    }
+    &:hover {
+        background-color: $yellow_2;
     }
 }
 .button_small2 {
+    display: flex;
+    gap: 4%;
+    justify-content: center;
+    align-items: center;
     background-color: $yellow_1;
     height: 40px;
     width: 149px;
@@ -22,12 +37,12 @@ background-color: $yellow_2;
     color: $white;
     font-weight: 700;
     font-size: 12px;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.05em;
     font-family: "Inter";
-    &:hover{
+    &:hover {
         background-color: $yellow_2;
-            }
-    i{
+    }
+    i {
         font-size: 13px;
     }
 }
@@ -43,51 +58,56 @@ background-color: $yellow_2;
     height: 59px;
     border-radius: 80px;
     color: $white;
+    letter-spacing: 0.05em;
     font-weight: 700;
-    &:hover{
+    &:hover {
         background-color: $yellow_2;
-            }
-    i {
-        font-size: 17px;
     }
 }
 
 .button_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $yellow_1;
     border-radius: 50%;
     width: 39px;
     height: 39px;
     color: $white;
-    font-size: 17px;
     text-align: center;
-    &:hover{
+    &:hover {
         background-color: $yellow_2;
-            }
+    }
 }
 
 .button_circle_small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $yellow_1;
     border-radius: 50%;
     width: 32px;
     height: 32px;
-    font-size: 14px;
     color: $white;
     text-align: center;
-    &:hover{
+    &:hover {
         background-color: $yellow_2;
-            }
+    }
 }
 .button_circle_big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $yellow_1;
     border-radius: 50%;
     width: 59px;
     height: 59px;
-    font-size: 14px;
+    font-size: 18px;
     color: $white;
     text-align: center;
-    &:hover{
+    &:hover {
         background-color: $yellow_2;
-            }
+    }
 }
 
 // @media (max-width: 1360px) {

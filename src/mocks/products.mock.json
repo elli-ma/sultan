@@ -5,36 +5,47 @@
             "name": "Косметика и гигиена",
             "parameters": [
                 {
+                    "id": 1,
                     "name": "Уход за телом"
                 },
                 {
+                    "id": 2,
                     "name": "Уход за руками"
                 },
                 {
+                    "id": 3,
                     "name": "Уход за ногами"
                 },
                 {
+                    "id": 4,
                     "name": "Уход за лицом"
                 },
                 {
+                    "id": 5,
                     "name": "Уход за волосами"
                 },
                 {
+                    "id": 6,
                     "name": "Средства для загара"
                 },
                 {
+                    "id": 7,
                     "name": "Средства для бритья"
                 },
                 {
+                    "id": 8,
                     "name": "Подарочные наборы"
                 },
                 {
+                    "id": 9,
                     "name": "Гигиеническая продукция"
                 },
                 {
+                    "id": 10,
                     "name": "Гигиена полости рта"
                 },
                 {
+                    "id":11,
                     "name": "Бумажная продукция"
                 }
             ]
@@ -55,7 +66,8 @@
             "weight": "90г.",
             "volume": "90г.",
             "amount": "90г.",
-            "article": "4604049097548"
+            "article": 4604049097548,
+            "category": 9
         },
         {
             "url": "/sultan/images/image2.png",
@@ -71,7 +83,8 @@
             "weight": "90г.",
             "volume": "90г.",
             "amount": "90г.",
-            "article": "4604049097548"
+            "article": 4604049097548,
+            "category": 2
         },
         {
             "url": "/sultan/images/image3.png",
@@ -87,7 +100,8 @@
             "weight": "90г.",
             "volume": "90г.",
             "amount": "90г.",
-            "article": "4604049097548"
+            "article": 4604049097548,
+            "category": 2
         },
    
         {
@@ -104,7 +118,8 @@
             "weight": "90г.",
             "volume": "90г.",
             "amount": "90г.",
-            "article": "4604049097548"
+            "article": 4604049097548,
+            "category": 2
         },
         {
             "url": "/sultan/images/image1.png",
@@ -120,7 +135,8 @@
             "weight": "90г.",
             "volume": "90г.",
             "amount": "90г.",
-            "article": "4604049097548"
+            "article": 4604049097548,
+            "category": 2
         },
         {
             "url": "/sultan/images/image2.png",
@@ -136,7 +152,8 @@
             "weight": "90г.",
             "volume": "90г.",
             "amount": "90г.",
-            "article": "4604049097548"
+            "article": 4604049097548,
+            "category": 2
         },
         {
             "url": "/sultan/images/image3.png",
@@ -144,7 +161,7 @@
             "type": "AOS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
             "size": "15X28.8",
-            "id": 4624049097542,
+            "id": 462204909,
             "manufacturer": "Нэфис",
             "brand": "AOS",
             "price": 48.76,
@@ -152,7 +169,8 @@
             "weight": "90г.",
             "volume": "90г.",
             "amount": "90г.",
-            "article": "4604049097548"
+            "article": 4604049097548,
+            "category": 2
         },
    
         {
@@ -161,7 +179,7 @@
             "type": "AOS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
             "size": "1500",
-            "id": 4614049097541,
+            "id": 4614029097541,
             "manufacturer": "Нэфис",
             "brand": "AOS",
             "price": 48.76,
@@ -169,8 +187,29 @@
             "weight": "90г.",
             "volume": "90г.",
             "amount": "90г.",
-            "article": "4604049097548"
+            "article": 4604049097548,
+            "category": 2
         }
+        ,
+   
+        {
+            "url": "/sultan/images/image4.png",
+            "name": "Порошок стиральный Автомат 100 пятен COMPACT",
+            "type": "AOS",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+            "size": "1500",
+            "id": 4614049797541,
+            "manufacturer": "Нэфис",
+            "brand": "AOS",
+            "price": 48.76,
+            "currency": "₸",
+            "weight": "90г.",
+            "volume": "90г.",
+            "amount": "90г.",
+            "article": 4604049097548,
+            "category": 2
+        }
+
      
   
     ]

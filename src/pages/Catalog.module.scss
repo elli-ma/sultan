@@ -127,16 +127,30 @@
         display: none;
     }
 }
-
+.block_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text_footer {
+    width: 83%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $dark_blue;
+}
+.nav_footer {
+    display: flex;
+}
 @media (max-width: 1188px) {
     .header_buttons {
         display: none;
     }
-    .title{
+    .title {
         font-weight: 500;
         font-size: 20px;
-        line-height: 120%;        
-        text-transform: uppercase;        
+        line-height: 120%;
+        text-transform: uppercase;
         color: #111111;
     }
 }

@@ -1,21 +1,31 @@
-import { useLoaderData, useSearchParams, Form } from 'react-router-dom'
+import { useState, useMemo } from 'react'
+import { useLoaderData, useParams, Form, Link } from 'react-router-dom'
 import Products from "../components/products/Products"
-import type { Product } from '../types'
+import type { Product, Category } from '../types'
 import styles from './Catalog.module.scss'
 import Button from '../components/button/Button'
-import { useState } from 'react'
 
-function Catalog({ catalog, category }: { catalog: Product[], category: { parameters: { name: string }[] } }) {
+function Catalog({ catalog, category }: { catalog: Product[], category: { parameters: Category[] } }) {
 
     // let [ searchParams, setSearchParams] = useSearchParams()
-    
+
     // const minPrice = searchParams.get("minPrice") ?? 0;
     // const maxPrice = searchParams.get('maxPrice') ?? 1000;
 
-    const [ minPrice, setMinPrice] = useState(0)
-    const [ maxPrice, setMaxPrice] = useState(1000)
+    const [minPrice, setMinPrice] = useState(0)
+    const [maxPrice, setMaxPrice] = useState(1000)
+    const [search, setSearch] = useState('')
+    const params = useParams()
 
-
+    const bound = (d: number) => Math.min(Math.max(d, 0), 1000)
+    const getSearchResult = () => catalog.filter(product => {
+        return (
+            minPrice <= product.price &&
+            maxPrice >= product.price &&
+            [product.description, product.name, product.brand, product.manufacturer].some(p => p.includes(search))
+        )
+    })
+    const catalogResult = useMemo(getSearchResult, [minPrice, maxPrice, search])
 
     return (
         <div className={styles.catalog}>
@@ -35,7 +45,7 @@ function Catalog({ catalog, category }: { catalog: Product[], category: { parame
 
                     <nav className={styles.header_buttons}>
                         {
-                            category.parameters.map(param => <button key={param.name} className={styles.button_white}>{param.name}</button>)
+                            category.parameters.map(param => <Link to={`/sultan/catalog/${param.id}`} relative="path" key={param.name} className={styles.button_white}>{param.name}</Link>)
                         }
                     </nav>
                 </div>
@@ -48,15 +58,15 @@ function Catalog({ catalog, category }: { catalog: Product[], category: { parame
                         <h5>Цена ₸</h5>
 
                         <div className={styles.add_prise}>
-                            <input className={styles.start} type="number" name="minPrice" defaultValue={minPrice} onChange={e => Number(e.target.value) >= 0 ? setMinPrice(Number(e.target.value)) : 0 }/>
+                            <input className={styles.start} type="number" name="minPrice" value={minPrice} onChange={e => setMinPrice(bound(Number(e.target.value)))} />
                             <p>-</p>
-                            <input className={styles.start} type="number" name="minPrice" defaultValue={maxPrice} onChange={e => Number(e.target.value) >= 0 ? setMaxPrice(Number(e.target.value)) : 0}/>
+                            <input className={styles.start} type="number" name="minPrice" value={maxPrice} onChange={e => setMaxPrice(bound(Number(e.target.value)))} />
                         </div>
 
                         <h5>Производитель</h5>
                         <div className={styles.input_button}>
-                            <input className={styles.manufacturer} type="text" name="title" placeholder="поиск" />
-                            <Button type="submit" icon="fa-solid fa-magnifying-glass" size="button_circle" />
+                            <input className={styles.manufacturer} type="text" name="search" placeholder="поиск" value={search} onChange={e => setSearch(e.target.value)} />
+                            <Button type="submit" icon="icon-magnify" size="button_circle" />
                         </div>
 
                         <div>
@@ -64,7 +74,7 @@ function Catalog({ catalog, category }: { catalog: Product[], category: { parame
                         </div>
                         <div className={styles.buttons}>
                             <Button name="Показать" icon="" size="button_big" />
-                            <Button icon="fa-solid fa-trash-can" size="button_circle_big" />
+                            <Button icon="icon-delete" size="button_circle_big" />
                         </div>
 
                         <div className={styles.category}>
@@ -72,7 +82,26 @@ function Catalog({ catalog, category }: { catalog: Product[], category: { parame
                         </div>
 
                     </div>
-                    <Products catalog={catalog} />
+                    <div className={styles.block_right}>
+                        <Products catalog={catalogResult} />
+                        <ul className={styles.nav_footer}>
+                            <li><i className='icon-arrow-right'></i></li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li><i className='icon-arrow-right'></i></li>
+                        </ul>
+
+                        <p className={styles.text_footer}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nullam interdum ut justo, vestibulum sagittis iaculis iaculis.
+                            Quis mattis vulputate feugiat massa vestibulum duis.
+                            Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis.
+                            Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>

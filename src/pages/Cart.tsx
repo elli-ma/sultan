@@ -51,7 +51,7 @@ function Cart() {
                   <button onClick={() => dispatch(addProduct(product))} className={styles.plus}>+</button>
                 </div>
                 <h3 className={styles.price} >{(product.price * amount).toFixed(2)}</h3>
-                <Button onClick={() => dispatch(removeProduct(product))} icon="fa-solid fa-trash-can" size="button_circle_big" />
+                <Button onClick={() => dispatch(removeProduct(product))} icon="icon-delete" size="button_circle_big" />
               </div>
             </div>
 

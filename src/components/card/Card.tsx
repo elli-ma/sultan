@@ -31,10 +31,10 @@ function Card({ product }: { product: Product }) {
                             <span>{amount}</span>
                             <button onClick={() => dispatch(addProduct(product))} className={styles.plus}>+</button>
                         </div>
-                        <Button onClick={() => dispatch(addProduct(product))} name="В корзину" icon="fa-solid fa-cart-plus" size="button_big" />
-                        <button className={styles.button_white}><i className="fa-solid fa-folder-tree"></i></button>
+                        <Button onClick={() => dispatch(addProduct(product))} name="В корзину" icon="icon-cart" size="button_big" />
+                        <button className={styles.button_white}><i className="icon-11"></i></button>
                         <button className={styles.button_white}>При покупке от 10 000 ₸ бесплатная доставка по Кокчетаву и области</button>
-                        <button className={styles.button_white}>"Прайс-лист"<i className="fa-solid fa-arrow-down"></i></button>
+                        <button className={styles.button_white}>"Прайс-лист"<i className="icon-download"></i></button>
                     </div>
                     <ul>
                         <li>Производитель: <b>{product.manufacturer}</b></li>
@@ -46,7 +46,7 @@ function Card({ product }: { product: Product }) {
                     <div>
                         <div className={styles.description_title} onClick={() => setDesc(!showDesc)}>
                             <h4>Описание</h4>
-                            <i className={showDesc ? "fa-solid fa-caret-up" : "fa-solid fa-caret-down"}></i>
+                            <i className={showDesc ? "icon-up" : "icon-down"}></i>
                         </div>
 
                         <p className={styles.description} style={{ display: showDesc ? 'block' : 'none' }}>
@@ -56,7 +56,7 @@ function Card({ product }: { product: Product }) {
 
                     <div className={styles.characteristics_title} onClick={() => setChar(!showChar)} >
                         <h4>Характеристики</h4>
-                        <i className={showChar ? "fa-solid fa-caret-up" : "fa-solid fa-caret-down"}></i>
+                        <i className={showChar ? "icon-up" : "icon-down"}></i>
                     </div>
 
                     <ul className={styles.characteristics} style={{ display: showChar ? 'block' : 'none' }}>

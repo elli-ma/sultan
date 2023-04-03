@@ -28,7 +28,7 @@ function Item({ product }: { product: Product }) {
             </Link>
             <div className={styles.footer}>
                 <h4>{product.price} {product.currency}</h4>
-                <Button onClick={() => dispatch(addProduct(product))} name="В корзину" icon="fa-solid fa-cart-plus" size = "button_small" />
+                <Button onClick={() => dispatch(addProduct(product))} name="В корзину" icon="icon-cart" size = "button_small" />
             </div>
         </li>
     )
