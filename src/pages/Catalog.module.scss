@@ -138,9 +138,31 @@
     font-size: 14px;
     line-height: 150%;
     color: $dark_blue;
+    padding-bottom: 50px;
 }
 .nav_footer {
+    padding: 50px;
     display: flex;
+    align-items: center;
+    li {
+        i {
+            color: $yellow_1;
+            padding: 15px;
+        }
+        button {
+            width: 35px;
+            height: 35px;
+            padding: 8.5px 14px;
+            background-color: $white;
+            color: $dark_blue;
+            border-radius: 50%;
+            &:hover {
+                background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+                padding: 8.5px 14px;
+                border-radius: 50%;
+            }
+        }
+    }
 }
 @media (max-width: 1188px) {
     .header_buttons {

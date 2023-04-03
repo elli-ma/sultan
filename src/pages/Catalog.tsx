@@ -86,11 +86,11 @@ function Catalog({ catalog, category }: { catalog: Product[], category: { parame
                         <Products catalog={catalogResult} />
                         <ul className={styles.nav_footer}>
                             <li><i className='icon-arrow-right'></i></li>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
+                            <li><button > 1</button></li>
+                            <li><button > 2</button></li>
+                            <li><button > 3</button></li>
+                            <li><button > 4</button></li>
+                            <li><button > 5</button></li>                            
                             <li><i className='icon-arrow-right'></i></li>
                         </ul>
 
