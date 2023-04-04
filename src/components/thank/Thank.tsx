@@ -5,7 +5,7 @@ function Thank({ close }: { close: () => any }) {
     return (
         <div className={styles.thank}>
             <div className={styles.i}>
-                <button className={styles.i} onClick={close}>
+                <button onClick={close}>
                     <i className="icon-close"  ></i>
                 </button>
 

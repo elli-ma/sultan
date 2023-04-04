@@ -35,7 +35,7 @@ function Cart() {
             <div className={styles.item} key={product.id}>
 
               <div className={styles.img_block}>
-                <img src={product.url} alt={product.description} />
+                <img className={styles.img} src={product.url} alt={product.description} />
               </div>
 
               <div className={styles.block}>
@@ -55,16 +55,16 @@ function Cart() {
               </div>
             </div>
 
-          
-          <hr /></>)}
-      </div>
 
-      <div className={styles.button_sum}>
-        <Button onClick={onPurchase} name="Оформить заказ" size="button_big" />
-        <h3>{cartTotal}  ₸</h3>
-      </div>
+            <hr /></>)}
+        </div>
 
-    </div>
+        <div className={styles.button_sum}>
+          <Button onClick={onPurchase} name="Оформить заказ" size="button_big" />
+          <h3>{cartTotal}  ₸</h3>
+        </div>
+
+      </div>
     </div >
   )
 }

@@ -156,6 +156,7 @@ footer {
         padding-top: 2em;
         flex-direction: column;
         gap: 30px;
+        align-items: center;
     }
     .block {
         img {
@@ -164,6 +165,6 @@ footer {
     }
     .contacts {
         flex-direction: row-reverse;
-        align-self: baseline;
+        align-self: center;
     }
 }

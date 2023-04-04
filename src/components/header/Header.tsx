@@ -55,8 +55,9 @@ function Header() {
                 <nav className={styles.nav_footer}>
                     <div className={styles.small_footer}>
                         <div>
-                            <Link to="/sultan/catalog"><i className="icon-catalog"></i></Link>
-                            <span>Каталог</span>
+                            <Link to="/sultan/catalog"><i className="icon-catalog"></i>
+                                <span>Каталог</span></Link>
+
                         </div>
                         <div>
                             <i className="icon-magnify"></i>

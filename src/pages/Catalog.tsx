@@ -35,11 +35,15 @@ function Catalog({ catalog, category }: { catalog: Product[], category: { parame
                         <li> <a href="">Главная</a></li>
                         <li className="end_crumb"> Косметика и гигиена</li>
                     </ul>
+                    <div className={styles.back}>
+                        <Button icon="icon-arrow-left" size="button_circle_small" />
+                        <span className={styles.back_text}>Назад</span>
+                    </div>
                     <div className={styles.title_sort}>
                         <h2 className={styles.title}>Косметика и гигиена</h2>
-                        <div>
-                            <span>Сортировка:</span>
-                            <span>Название</span>
+                        <div className={styles.sort_item}>
+                            <span className={styles.title_s}>Сортировка:</span>
+                            <span>&nbsp;Название</span>
                         </div>
                     </div>
 
@@ -81,16 +85,21 @@ function Catalog({ catalog, category }: { catalog: Product[], category: { parame
                             {category.parameters.map(param => <a key={param.name}>{param.name}</a>)}
                         </div>
 
+                        <div className={styles.sort_item2}>
+                            <span className={styles.title_s}>Сортировка:</span>
+                            <span>&nbsp;Название</span>
+                        </div>
+
                     </div>
                     <div className={styles.block_right}>
                         <Products catalog={catalogResult} />
                         <ul className={styles.nav_footer}>
-                            <li><i className='icon-arrow-right'></i></li>
+                            <li><i className='icon-arrow-left'></i></li>
                             <li><button > 1</button></li>
                             <li><button > 2</button></li>
                             <li><button > 3</button></li>
                             <li><button > 4</button></li>
-                            <li><button > 5</button></li>                            
+                            <li><button > 5</button></li>
                             <li><i className='icon-arrow-right'></i></li>
                         </ul>
 

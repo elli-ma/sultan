@@ -1,17 +1,18 @@
 @font-face {
-  font-family: "icons";
-  src: url("icons.eot?tgvckf");
-  src: url("icons.eot?tgvckf#iefix") format("embedded-opentype"), url("icons.ttf?tgvckf") format("truetype"),
-    url("icons.woff?tgvckf") format("woff"), url("icons.svg?tgvckf#icons") format("svg");
+  font-family: 'icons';
+  src:  url('./icons.eot?ll32nt');
+  src:  url('./icons.eot?ll32nt#iefix') format('embedded-opentype'),
+    url('./icons.ttf?ll32nt') format('truetype'),
+    url('./icons.woff?ll32nt') format('woff'),
+    url('./icons.svg?ll32nt#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
+[class^="icon-"]::before, [class*=" icon-"]::before {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icons" !important;
+  font-family: 'icons' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -42,6 +43,10 @@
 .icon-arrow-right:before {
   content: "\e908";
   font-size: 13px;
+}
+.icon-arrow-left:before {
+  content: "\e902";
+  font-size:13px;
 }
 .icon-close:before {
   content: "\e909";

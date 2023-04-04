@@ -168,8 +168,12 @@ header {
         justify-content: space-around;
         width: 100%;
         align-items: center;
-        span{
+        a {
+            color: $dark_blue;
+        }
+        span {
             padding-left: 8px;
+            color: $dark_blue;
         }
     }
     .small_header {
@@ -187,5 +191,3 @@ header {
         color: $dark_blue;
     }
 }
-
-

@@ -68,4 +68,7 @@ hr {
             color: $grey;
         }
     }
+    @media (max-width: 1188px) {
+        display: none;
+    }
 }

@@ -31,12 +31,7 @@
 .title_sort {
     display: flex;
     justify-content: space-between;
-
-    span {
-        @media screen and (max-width: 1360px) {
-            display: none;
-        }
-    }
+    align-items: end;
 }
 .button_white {
     height: 70px;
@@ -124,7 +119,18 @@
     gap: 30px;
     flex-direction: column;
     @media screen and (max-width: 1000px) {
-        display: none;
+        h5 {
+            display: none;
+        }
+        .add_prise {
+            display: none;
+        }
+        .input_button {
+            display: none;
+        }
+        .buttons {
+            display: none;
+        }
     }
 }
 .block_right {
@@ -164,6 +170,27 @@
         }
     }
 }
+.back {
+    display: none;
+}
+.sort_item {
+    display: flex;
+    .title_s {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #111111;
+    }
+    span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $dark_blue;
+    }
+}
+.sort_item2 {
+    display: none;
+}
 @media (max-width: 1188px) {
     .header_buttons {
         display: none;
@@ -174,5 +201,48 @@
         line-height: 120%;
         text-transform: uppercase;
         color: #111111;
+        padding-bottom: 19px;
+    }
+
+    .back {
+        padding: 20px 0px;
+        display: flex;
+        align-items: center;
+        gap: 2%;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 120%;
+        color: $dark_blue;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        button {
+            color:$dark_blue;
+            background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+        }
+    }
+    .block {
+        flex-direction: column;
+    }
+    .navbar {
+        gap: 9px;
+        padding-bottom: 35px;
+    }
+    .sort_item {
+        display: none;
+    }
+    .sort_item2 {
+        display: flex;
+        .title_s {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: #111111;
+        }
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $dark_blue;
+        }
     }
 }
