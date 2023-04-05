@@ -1,9 +1,39 @@
+@import "src/color.scss";
 .ProductsCart {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-.wrap{
-    width: 1360px; 
+.wrap {
+    width: 1360px;
+}
+
+@media (min-width: 1000px) {
+    .back {
+        display: none;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrap {
+        width: 100%;
+    }
+    .back {
+        padding: 20px 15px;
+        display: flex;
+        align-items: center;
+        gap: 2%;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 120%;
+        color: $dark_blue;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        button {
+            color: $dark_blue;
+            background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+        }
+    }
 }

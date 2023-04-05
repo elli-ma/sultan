@@ -12,7 +12,8 @@ export type Product = {
     price: number,
     currency: string,
     article: number,
-    category: number
+    category: number[],
+    popularity: number
 }
 
 export type Category = {

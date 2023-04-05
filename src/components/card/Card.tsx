@@ -33,8 +33,8 @@ function Card({ product }: { product: Product }) {
                         </div>
                         <Button onClick={() => dispatch(addProduct(product))} name="В корзину" icon="icon-cart" size="button_big" />
                         <button className={styles.button_white}><i className="icon-11"></i></button>
-                        <button className={styles.button_white}>При покупке от 10 000 ₸ бесплатная доставка по Кокчетаву и области</button>
-                        <button className={styles.button_white}>"Прайс-лист"<i className="icon-download"></i></button>
+                        <button className={styles.button_whitebig}>При покупке от 10 000 ₸ бесплатная доставка по Кокчетаву и области</button>
+                        <button className={styles.button_whitebig}>"Прайс-лист"<i className="icon-download"></i></button>
                     </div>
                     <ul>
                         <li>Производитель: <b>{product.manufacturer}</b></li>

@@ -65,12 +65,22 @@
 .title {
     padding: 0 0 50px 0;
 }
+.back {
+    display: none;
+}
 
 @media (max-width: 1000px) {
+    .wrap{
+        width: 100%;
+        
+    }
     .item {
         flex-direction: column;
         gap: 10px;
         padding: 15px;
+        .img {
+            max-width: 250%;
+        }
     }
     .block2 {
         width: 90%;
@@ -80,6 +90,8 @@
         font-size: 20px;
         line-height: 120%;
         text-transform: uppercase;
+        padding-bottom: 20px;
+        padding: 0px 15px;
     }
     .title_item {
         font-weight: 500;
@@ -93,5 +105,22 @@
     }
     .button_sum {
         flex-direction: column-reverse;
+        gap:25px;
     }
+    .back {
+        padding: 20px 15px;
+        display: flex;
+        align-items: center;
+        gap: 2%;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 120%;
+        color: $dark_blue;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        button {
+            color: $dark_blue;
+            background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+        }
+}
 }

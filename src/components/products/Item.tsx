@@ -12,7 +12,7 @@ function Item({ product }: { product: Product }) {
     
     return (
         <li className={styles.item}>
-            <Link to={`/sultan/catalog/${product.id}`} className={styles.main}>
+            <Link to={`/sultan/products/${product.id}`} className={styles.main}>
 
                 <div className={styles.image}>
                     <img className ={styles.img_product} src={product.url} alt={product.description} />

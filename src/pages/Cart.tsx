@@ -28,11 +28,15 @@ function Cart() {
           <li><a href="">Главная</a></li>
           <li className="end_crumb">Корзина</li>
         </ul>
+        <div className={styles.back}>
+          <Button icon="icon-arrow-left" size="button_circle_small" />
+          <span className={styles.back_text}>Назад</span>
+        </div>
         <h2 className={styles.title}>Корзина</h2>
         <hr />
         <div>
-          {cart.map(({ product, amount }) => <>
-            <div className={styles.item} key={product.id}>
+          {cart.map(({ product, amount }) => <div key={product.id}>
+            <div className={styles.item}>
 
               <div className={styles.img_block}>
                 <img className={styles.img} src={product.url} alt={product.description} />
@@ -55,8 +59,7 @@ function Cart() {
               </div>
             </div>
 
-
-            <hr /></>)}
+            <hr /></div>)}
         </div>
 
         <div className={styles.button_sum}>

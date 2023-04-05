@@ -45,7 +45,7 @@
                     "name": "Гигиена полости рта"
                 },
                 {
-                    "id":11,
+                    "id": 11,
                     "name": "Бумажная продукция"
                 }
             ]
@@ -67,7 +67,11 @@
             "volume": "90г.",
             "amount": "90г.",
             "article": 4604049097548,
-            "category": 9
+            "category": [
+                1,
+                2
+            ],
+            "popularity": 1
         },
         {
             "url": "/sultan/images/image2.png",
@@ -84,7 +88,10 @@
             "volume": "90г.",
             "amount": "90г.",
             "article": 4604049097548,
-            "category": 2
+            "category": [
+                2
+            ],
+            "popularity": 2
         },
         {
             "url": "/sultan/images/image3.png",
@@ -101,9 +108,11 @@
             "volume": "90г.",
             "amount": "90г.",
             "article": 4604049097548,
-            "category": 2
+            "category": [
+                2
+            ],
+            "popularity": 2
         },
-   
         {
             "url": "/sultan/images/image4.png",
             "name": "Порошок стиральный Автомат 100 пятен COMPACT",
@@ -119,7 +128,10 @@
             "volume": "90г.",
             "amount": "90г.",
             "article": 4604049097548,
-            "category": 2
+            "category": [
+                2
+            ],
+            "popularity": 2
         },
         {
             "url": "/sultan/images/image5.png",
@@ -136,8 +148,10 @@
             "volume": "90г.",
             "amount": "90г.",
             "article": 4604049097548,
-            "category": 2
-        } 
-  
+            "category": [
+                1
+            ],
+            "popularity": 3
+        }
     ]
 }
