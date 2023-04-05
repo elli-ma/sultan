@@ -119,7 +119,7 @@
     gap: 30px;
     flex-direction: column;
     @media screen and (max-width: 1000px) {
-        h5 {
+        .h5 {
             display: none;
         }
         .add_prise {
@@ -173,21 +173,21 @@
 .back {
     display: none;
 }
-.sort_item {
-    display: flex;
-    .title_s {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 150%;
-        color: #111111;
-    }
-    span {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        color: $dark_blue;
-    }
-}
+// .sort_item {
+//     display: flex;
+//     .title_s {
+//         font-weight: 500;
+//         font-size: 16px;
+//         line-height: 150%;
+//         color: #111111;
+//     }
+//     span {
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 150%;
+//         color: $dark_blue;
+//     }
+// }
 .sort_item2 {
     display: none;
 }
@@ -216,7 +216,7 @@
         text-transform: uppercase;
         letter-spacing: 0.14em;
         button {
-            color:$dark_blue;
+            color: $dark_blue;
             background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
         }
     }
@@ -232,17 +232,5 @@
     }
     .sort_item2 {
         display: flex;
-        .title_s {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 150%;
-            color: #111111;
-        }
-        span {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 150%;
-            color: $dark_blue;
-        }
     }
 }
