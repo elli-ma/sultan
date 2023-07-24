@@ -1,0 +1,18 @@
+@import "../../color.scss";
+.StockProducts {
+    display: flex;
+    justify-content: center;
+}
+.title__start{
+    color: $yellow_1;
+}
+.title {
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 48px;
+    font-weight: 400;
+    padding-bottom: 48px;
+}
+.wrap {
+    width: 1360px;
+}

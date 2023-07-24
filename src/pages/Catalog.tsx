@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { useLoaderData, useParams, Form, Link, useSearchParams } from 'react-router-dom'
+import {Form, Link, useSearchParams } from 'react-router-dom'
 import Products from "../components/products/Products"
 import type { Product, Category } from '../types'
 import styles from './Catalog.module.scss'
@@ -48,7 +48,7 @@ function Catalog({ catalog, category }: { catalog: Product[], category: { parame
             <div className={styles.wrap}>
                 <div>
                     <ul className="crumbs">
-                        <li> <a href="">Главная</a></li>
+                      <li> <Link to="/sultan/"><a href="">Главная</a></Link> </li>
                         <li className="end_crumb">Косметика и гигиена</li>
                     </ul>
 
@@ -71,8 +71,6 @@ function Catalog({ catalog, category }: { catalog: Product[], category: { parame
                     </nav>
                 </div>
 
-
-
                 <div className={styles.block}>
                     <div className={styles.navbar}>
                         <Form className={styles.navbar} action="">
@@ -93,16 +91,14 @@ function Catalog({ catalog, category }: { catalog: Product[], category: { parame
                             </div>
 
                             <div className={styles.manufacturer}>
-                                {manufacturers.map(m => <div key={m}>{m}<input className ={styles.check} name="firms" value={m} type="checkbox" /></div>)}
+                                {manufacturers.map(m => <div key={m}>{m}<input className={styles.check} name="firms" value={m} type="checkbox" /></div>)}
                             </div>
                             <div className={styles.buttons}>
-                                <Button name="Показать" icon="" size="button_big" type="submit" />
+                                <Button name="Показать" size="button_big" type="submit" />
                                 <Button icon="icon-delete" size="button_circle_big" />
                             </div>
 
-
                             <fieldset className={styles.category}>
-                                {/* {category.parameters.map(param => <label key={param.name}> {param.name} <input type="checkbox" name="sub" defaultValue={param.id}/> </label >)} */}
                                 {category.parameters.map(param => <label key={param.name}> {param.name} </label >)}
                             </fieldset>
                         </Form>

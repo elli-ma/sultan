@@ -1,7 +1,6 @@
 @import "src/color.scss";
 
 .button_small {
-    gap: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +17,7 @@
     letter-spacing: 0.15em;
     font-family: "Inter";
     text-transform: uppercase;
-    i{
+    i {
         font-size: 18px;
     }
     &:hover {
@@ -27,7 +26,6 @@
 }
 .button_small2 {
     display: flex;
-    gap: 4%;
     justify-content: center;
     align-items: center;
     background-color: $yellow_1;
@@ -51,7 +49,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 13px;
     font-size: 14px;
     width: 200px;
     background-color: $yellow_1;
@@ -60,6 +57,26 @@
     color: $white;
     letter-spacing: 0.05em;
     font-weight: 700;
+    &:hover {
+        background-color: $yellow_2;
+    }
+}
+
+.button_big1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 300px;
+    background-color: $yellow_1;
+    height: 95px;
+    border-radius: 80px;
+    color: $white;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 21.78px;
+    letter-spacing: 3px;
     &:hover {
         background-color: $yellow_2;
     }
@@ -94,6 +111,20 @@
         background-color: $yellow_2;
     }
 }
+.button_circle_small1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $yellow_1;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    color: $white;
+    text-align: center;
+    &:hover {
+        background-color: $yellow_2;
+    }
+}
 .button_circle_big {
     display: flex;
     justify-content: center;
@@ -109,19 +140,3 @@
         background-color: $yellow_2;
     }
 }
-
-// @media (max-width: 1360px) {
-
-//     .button_big {
-//         width: 180px;
-//         background-color: $yellow_1;
-//         height: 45px;
-//         border-radius: 80px;
-//         color: $white;
-//         font-weight: 600;
-//         font-size: 12px;
-//         letter-spacing: 0.15em;
-//         font-family: "Inter";
-//     }
-
-// }

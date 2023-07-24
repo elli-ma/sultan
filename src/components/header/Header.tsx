@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
 import logoUrl from '../../assets/logo2.svg'
 import phoneUrl from '../../assets/phone.png'
-
-import Button from "../button/Button";
+import Button from "../button/Button"
 import styles from "./Header.module.scss"
 import { useAppSelector } from '../../hooks';
 
@@ -65,7 +64,7 @@ function Header() {
 
                         </div>
                     </div>
-                    <img className="logo" src={logoUrl} alt=""></img>
+                    <Link to="/sultan/"> <img className="logo" src={logoUrl} alt=""></img></Link>
                     <Link to="/sultan/catalog"><Button name="Каталог" icon="icon-catalog" size="button_big" /></Link>
                     <div className={styles.input_button}>
                         <input type="text" placeholder="Поиск..." />

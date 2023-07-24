@@ -15,7 +15,7 @@ function ProductsCart({ products }: { products: Product[] }) {
             <div className={styles.ProductsCart}>
                 <div className={styles.wrap}>
                     <ul className="crumbs">
-                        <Link to=""><a href="">Главная</a></Link >
+                        <Link to="/sultan/"><a href="">Главная</a></Link >
                         <Link to="/sultan/catalog"><a href="">Каталог</a></Link>
                         <Link to={`/sultan/products/${product.id}`} className="end_crumb">{product.name}</Link>
                     </ul>

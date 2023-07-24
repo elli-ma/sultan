@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { addProduct, removeProduct, clear } from '../features/cart/cartSlice';
 import { useAppSelector, useAppDispatch } from '../hooks';
-
+import { Link } from 'react-router-dom';
 import styles from './Cart.module.scss';
 import Button from '../components/button/Button';
 import Thank from '../components/thank/Thank';
@@ -25,7 +25,7 @@ function Cart() {
       {!showThank || <Thank close={() => setShowThank(false)} />}
       <div className={styles.wrap}>
         <ul className="crumbs">
-          <li><a href="">Главная</a></li>
+          <li> <Link to="/sultan/"><a href="">Главная</a></Link> </li>
           <li className="end_crumb">Корзина</li>
         </ul>
         <div className={styles.back}>

@@ -152,6 +152,66 @@
                 1
             ],
             "popularity": 3
+        },
+        {
+            "url": "/sultan/images/image5.png",
+            "name": "BIO-SOAP Экологичное туалетное мыло. Литсея и бергамот",
+            "type": "BioMio",
+            "size": "90 г",
+            "id": 4654049097540,
+            "manufacturer": "BioMio",
+            "brand": "BioMio",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+            "price": 12.76,
+            "currency": "₸",
+            "weight": "90г.",
+            "volume": "90г.",
+            "amount": "90г.",
+            "article": 4604049097548,
+            "category": [
+                1
+            ],
+            "popularity": 3
+        },
+        {
+            "url": "/sultan/images/image5.png",
+            "name": "BIO-SOAP Экологичное туалетное мыло. Литсея и бергамот",
+            "type": "BioMio",
+            "size": "90 г",
+            "id": 4654049097540,
+            "manufacturer": "BioMio",
+            "brand": "BioMio",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+            "price": 12.76,
+            "currency": "₸",
+            "weight": "90г.",
+            "volume": "90г.",
+            "amount": "90г.",
+            "article": 4604049097548,
+            "category": [
+                1
+            ],
+            "popularity": 3
+        },
+        {
+            "url": "/sultan/images/image5.png",
+            "name": "BIO-SOAP Экологичное туалетное мыло. Литсея и бергамот",
+            "type": "BioMio",
+            "size": "90 г",
+            "id": 4654049097540,
+            "manufacturer": "BioMio",
+            "brand": "BioMio",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+            "price": 12.76,
+            "currency": "₸",
+            "weight": "90г.",
+            "volume": "90г.",
+            "amount": "90г.",
+            "article": 4604049097548,
+            "category": [
+                1
+            ],
+            "popularity": 3
         }
     ]
 }

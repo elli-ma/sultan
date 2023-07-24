@@ -1,0 +1,68 @@
+@import "src/color.scss";
+.promotion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap {
+    width: 1360px;
+    height: 500px;
+    border-radius: 15px;
+    background-image: url(../../assets/promotion.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px;
+    position: relative; 
+    left: -100%; 
+    animation: slideIn 3s forwards;
+}
+@keyframes slideIn {
+    to {
+        left: 0;
+    }
+}
+.promotion__title {
+    color: $white;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 77px;
+    text-transform: none;
+}
+.promotion__text {
+    text-transform: uppercase;
+    color: $white;
+}
+.promotion__text1 {
+    color: $white;
+    max-width: 450px;
+}
+
+
+@media (max-width: 600px) {
+    .wrap{
+        width: 90%;
+        height: 210px;
+        padding: 20px;
+        gap: 10px;
+        background-size: cover;
+        background-position: right;
+    }
+    .promotion__title {
+        color: $white;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: none;
+    }
+    .promotion__text {
+            font-size: 8px;
+            line-height: 14px;
+    }
+    .promotion__text1 {
+      font-size: 12px;
+      max-width: 150px;
+      line-height: 14px;
+    }
+}
+

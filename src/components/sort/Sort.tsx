@@ -1,19 +1,6 @@
 import styles from "./Sort.module.scss"
 import { useState } from "react";
 
-// function Prise(a) {
-//     return a.sort((obj1, obj2) => obj1.prise - obj2.prise)
-// }
-// function Name(a) {
-//     return a.sort(function (obj1, obj2) {
-//         if (obj1.name < obj2.name) return -1;
-//         if (obj1.name > obj2.name) return 1;
-//         return 0;
-//     });
-// }
-// function Popularity(a) {
-//     return a.sort((obj1, obj2) => obj1.popularity - obj2.popularity)
-// }
 export type Choice = "популярности" | "цене" | "названию"
 function Sort({value, onChangeSort} : {value: Choice, onChangeSort: (k: Choice) => any} ) {
     const [open, setOpen] = useState(false);
@@ -22,7 +9,6 @@ function Sort({value, onChangeSort} : {value: Choice, onChangeSort: (k: Choice) 
         onChangeSort(i);
         setOpen(false);
     }
-
 
     return (
 
