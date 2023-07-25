@@ -20,7 +20,7 @@ function ProductsCart({ products }: { products: Product[] }) {
                         <Link to={`/sultan/products/${product.id}`} className="end_crumb">{product.name}</Link>
                     </ul>
                     <div className={styles.back}>
-                        <Button icon="icon-arrow-left" size="button_circle_small" />
+                        <Link to="/sultan/catalog"><Button icon="icon-arrow-left" size="button_circle_small" /></Link>
                         <span className={styles.back_text}>Назад</span>
                     </div>
                     <Card product={product} />

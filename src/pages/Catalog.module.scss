@@ -152,6 +152,7 @@
         .buttons {
             display: none;
         }
+        padding: 0;
     }
 }
 .block_right {
@@ -201,7 +202,6 @@
 .manufacturer {
     .check {
         padding: 5px;
-        
     }
 }
 @media (max-width: 1188px) {
@@ -216,7 +216,9 @@
         color: #111111;
         padding-bottom: 19px;
     }
-
+    .navbar {
+        gap: 0;
+    }
     .back {
         padding: 20px 0px;
         display: flex;
@@ -236,14 +238,14 @@
     .block {
         flex-direction: column;
     }
-    .navbar {
-        gap: 9px;
-        padding-bottom: 35px;
-    }
+
     .sort_item {
         display: none;
     }
     .sort_item2 {
         display: flex;
+    }
+    .block_title {
+        display: none;
     }
 }

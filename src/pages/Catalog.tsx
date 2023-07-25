@@ -53,7 +53,7 @@ function Catalog({ catalog, category }: { catalog: Product[], category: { parame
                     </ul>
 
                     <div className={styles.back}>
-                        <Button icon="icon-arrow-left" size="button_circle_small" />
+                    <Link to="/sultan/"><Button icon="icon-arrow-left" size="button_circle_small" /></Link> 
                         <span className={styles.back_text}>Назад</span>
                     </div>
 
@@ -83,24 +83,22 @@ function Catalog({ catalog, category }: { catalog: Product[], category: { parame
                                 <input className={styles.start} type="number" name="minPrice" defaultValue={maxPrice} />
                             </div>
 
-                            <h5 className={styles.h5}>Производитель</h5>
-
                             <div className={styles.input_button}>
                                 <input className={styles.manufacturer} type="text" name="search" placeholder="поиск" defaultValue={search} />
                                 <Button type="submit" icon="icon-magnify" size="button_circle" />
                             </div>
 
-                            <div className={styles.manufacturer}>
+                            {/* <div className={styles.manufacturer}>
                                 {manufacturers.map(m => <div key={m}>{m}<input className={styles.check} name="firms" value={m} type="checkbox" /></div>)}
-                            </div>
+                            </div> */}
                             <div className={styles.buttons}>
                                 <Button name="Показать" size="button_big" type="submit" />
                                 <Button icon="icon-delete" size="button_circle_big" />
                             </div>
 
-                            <fieldset className={styles.category}>
+                            {/* <fieldset className={styles.category}>
                                 {category.parameters.map(param => <label key={param.name}> {param.name} </label >)}
-                            </fieldset>
+                            </fieldset> */}
                         </Form>
 
                         <div className={styles.sort_item2}>
