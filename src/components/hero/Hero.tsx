@@ -6,12 +6,13 @@ function Hero() {
     return (
         <div>
             <div className={styles.hero}>
+                <div className={styles.blur}></div>
                 <div className={styles.wrapper}>
                     <div className={styles.block}>
                         <h1 className={styles.title}>Бытовая химия, косметика и хозтовары</h1>
                         <h3 className={styles.title_small}>оптом по кокчетаву и области</h3>
                         <Link to="/sultan/catalog" >
-                           <div className={styles.block_button}><Button name="В каталог" size="button_big1" /></div>
+                            <div className={styles.block_button}><Button name="В каталог" size="button_big1" /></div>
                         </Link>
                         <div className={styles.items}>
                             <div className={styles.item}>
@@ -25,6 +26,7 @@ function Hero() {
                         </div>
                     </div>
                 </div>
+
             </div>
             <div className={styles.items__small}>
                 <div className={styles.item}>

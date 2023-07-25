@@ -1,11 +1,22 @@
-@import "src/color.scss";
+@import "../../color.scss";
 .hero {
+    position: relative;
     background-image: url(../../assets/hero.png);
     background-size: cover;
     width: 100%;
     height: 921px;
     display: flex;
     justify-content: center;
+    z-index: 0;
+}
+.blur {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 55%;
+    height: 921px;
+    backdrop-filter: blur(10px);
+    z-index: 2;
 }
 .wrapper {
     width: 1360px;
@@ -17,6 +28,7 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+    z-index: 3;
 }
 .items {
     display: flex;
@@ -51,17 +63,23 @@
 }
 @media (max-width: 1450px) {
     .wrapper {
-        width: 80%;
+        width: 90%;
+    }
+    .blur{
+        width: 90%;
     }
 }
 
 @media (max-width: 600px) {
-      .hero {
-        background-image: url(../../assets/hero__small.png) ;
+    .blur{
+        display: none;
+    }
+    .hero {
+        background-image: url(../../assets/hero__small.png);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 210px;       
-        }
+        height: 210px;
+    }
     .title {
         font-weight: 500;
         font-size: 18px;
@@ -93,8 +111,10 @@
         font-size: 10px;
         width: 100%;
     }
-    .block{
-        gap:15px;
+    .block {
+        padding: 6%;
+        gap: 15px;
         width: 100%;
+        backdrop-filter: blur(10px);
     }
 }

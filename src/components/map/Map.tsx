@@ -19,7 +19,6 @@ const MapKazakhstan: React.FC = () => {
                         </Popup>
                     </Marker>
                 </MapContainer>
-
                 <div className={styles.info}>
                     <h3 className={styles.title}>Контакты</h3>
                     <span className={styles.text}>Оптовый поставщик «Султан»</span>
