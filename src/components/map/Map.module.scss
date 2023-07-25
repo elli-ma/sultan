@@ -1,13 +1,13 @@
+@import "../../color.scss";
+
 .map {
     display: flex;
     justify-content: center;
 }
 .wrap {
     width: 1360px;
-    background-image: url(../../assets/map.png);
-    background-size: cover;
     height: 600px;
-    border-radius: 20px;
+     position: relative;
 }
 .title {
     font-weight: 500;
@@ -20,17 +20,23 @@
     line-height: 24px;
 }
 .info {
-    background-image: url(../../assets/map1.png);
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 735px;
     height: 424px;
     background-size: cover;
     margin-top: 40px;
-    margin-left: 40px;
+    margin-left: 50px;
     padding: 50px;
     display: flex;
     gap: 15px;
     flex-direction: column;
     border-radius: 20px;
+    z-index: 800;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+
 }
 .block {
     display: flex;
