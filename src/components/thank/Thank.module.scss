@@ -1,7 +1,7 @@
 @import "src/color.scss";
 .thank {
     padding: 1%;
-    gap: 20%;
+    gap: 10%;
     width: 735px;
     height: 424px;
     position: fixed;
@@ -9,8 +9,9 @@
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    box-shadow: 0px 14px 39px 600px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 14px 39px 10000px rgba(60, 78, 100,0.5);
     z-index: 1;
+    z-index: 999999;
 }
 .block {
     display: flex;
@@ -18,7 +19,7 @@
     justify-content: center;
     flex-direction: column;
     button {
-        margin: 1%;
+        margin: 3%;
     }
     h2 {
         margin: 1%;
@@ -50,13 +51,11 @@
         line-height: 120%;
     }
     .text {
+        padding: 1%;
         font-weight: 300;
         font-size: 12px;
         line-height: 120%;
+        text-align: center;
     }
-    .i {
-        i {
-            padding: 16px;
-        }
-    }
+  
 }
