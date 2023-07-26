@@ -1,4 +1,4 @@
-[Открыть проект](https://elli-ma.github.io/sultan/)
+### [Открыть проект](https://elli-ma.github.io/sultan/)
 
 # Проект "Sultan"
 
