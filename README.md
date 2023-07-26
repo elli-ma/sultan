@@ -1,4 +1,4 @@
-# открыть приложение: https://elli-ma.github.io/sultan/
+## https://elli-ma.github.io/sultan/
 
 # Проект "Sultan"
 
