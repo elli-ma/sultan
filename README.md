@@ -1,4 +1,4 @@
-:information_desk_person: ### [Открыть проект](https://elli-ma.github.io/sultan/)
+:information_desk_person: [GitHub Pages](https://elli-ma.github.io/sultan/)
 
 # Проект "Sultan"
 
